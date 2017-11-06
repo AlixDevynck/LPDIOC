@@ -32,4 +32,17 @@ class TPZController extends Controller{
             'Hello/Hello2.html.twig'
         );
     }
+    function create(){
+
+        $user = new User();
+        $user->setNom("Devynck");
+        $user->setPrenom("Alix");
+        $user->setGithub("Kiraw");
+
+        return $this->render(
+            'create/create.html.twig', ["nom" => $user->GetNom(), "prenom" => $user->GetPrenom()]
+        );
+}
+
+
 }
