@@ -23,7 +23,9 @@ class TPZController extends Controller{
 
         );
     }
-
+    /**
+     * @Route ("/annotation",name="hello_world")
+     */
     function index2(){
 
         return $this->render(
