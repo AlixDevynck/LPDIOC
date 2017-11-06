@@ -14,10 +14,20 @@ use Symfony\Component\HttpFoundation\Response;
 class TPZController extends Controller{
     function index()
     {
+        /**
+         * @Route ("/annotation",name="hello_world")
+         */
 
         return $this->render(
             'Hello/Hello.html.twig'
 
+        );
+    }
+
+    function index2(){
+
+        return $this->render(
+            'Hello/Hello2.html.twig'
         );
     }
 }
